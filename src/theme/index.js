@@ -2,30 +2,27 @@ const ROOT = {
   header_height:'70px',
     // =====  PRIMARY COLORS  ===========
   
-    primary_color: '#8056F7',
-    primary_color_dark: '#262626',
-    primary_color_light: '#333333',
-    primary_color_gray1: '#323232',
-    primary_color_gray2: '#878787',
-    
-    secondary_color: '#AE92FF',
-    secondary_color_dark: '#FF2A00',
-    secondary_color_light: '#FF6651',
+    primary_color: '#df1f26',    
+    secondary_color: '#eeeeee',
+
+    gray_light:'#f7f7f7',
+    gray_dark:'#555',
+    border_color:'e8ebf1',
   
     // ======  Color  ======
+    orange: '#fd926d',
+    black:'#000000',
+    white: '#fff',
+
     blue: '#007bff',
     indigo: '#6610f2',
     purple: '#6f42c1',
     pink: '#e83e8c',
     red: '#dc3545',
-    black:'#000000',
-    orange: '#fd7e14',
     yellow: '#ffc107',
     green: '#28a745',
     teal: '#20c997',
     cyan: '#17a2b8',
-    white: '#fff',
-    gray: '#6c757d',
     gray_dark: '#343a40',
     primary: '#007bff',
     secondary: '#6c757d',
@@ -55,7 +52,7 @@ const ROOT = {
   
   
     // =========  linear Gradiant ======
-    linear_gradiant1: 'linear-gradient(90deg, rgba(17,94,223,1) 2%, rgba(17,189,224,1) 91%)',
+    linear_gradiant1: 'linear-gradient(45deg, #dee9f1 50%, #f1ede9 57%, #f9eae4 100%)',
     linear_gradiant2: ' linear-gradient(90deg, #8056F7 0%, #AE92FF 100%)',
     // =========  Box Shadow ======
     button_box_shadow: 'rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;',

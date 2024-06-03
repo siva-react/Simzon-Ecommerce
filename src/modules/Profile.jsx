@@ -1,7 +1,8 @@
+import { Container } from '@theme/Styled'
 import React from 'react'
 
 export const Profile = () => {
   return (
-    <div>Profile</div>
+    <Container>Profile</Container>
   )
 }

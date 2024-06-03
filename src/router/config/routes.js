@@ -1,10 +1,9 @@
 import { NetWorkError } from "@router/components/NetWorkError"
 import PageNotFound from "@router/components/PageNotFound"
-import UserSignin from "@modules/Auth/Partials/UserSignin"
-import { Example } from "@modules/Example"
 import { Profile } from "@modules/Profile"
+import AboutUs from "@modules/AboutUs/AboutUs"
 
-export const anonymous = [
+export const linkList = [
     {       
         routePath: '*',   // ----------- Page Not Fonund
         Component: PageNotFound,
@@ -14,45 +13,24 @@ export const anonymous = [
         Component: NetWorkError,
     },
     {
-        routePath: '/signin',  // ----------- Signin Page
-        Component: UserSignin,
+        routePath: '/',  // ----------- Signin Page
+        Component: Profile,
     },
-    // {
-    //     routePath: '/register',
-    //     Component: RegisterMenu,
-    // },
-    // {
-    //     routePath: '/password',
-    //     Component: PasswordForm,
-    // },
+    {
+        routePath: 'aboutus',  // ----------- Signin Page
+        Component: AboutUs,
+    },
 ]
 
-export const adminAuthenticated = [
-    {       
-        routePath: '*',   // ----------- Page Not Fonund
-        Component: PageNotFound,
-    },
-    {       
-        routePath: 'networkerror',  // ----------- Network Error
-        Component: NetWorkError,
+export const navItems=[
+    {
+        key:'1',
+        name:'Home',
+        path:'/'
     },
     {
-        routePath:'',  // ----------- Dashboard
-        Component:Example, 
-    }
-]
-
-export const userAuthenticated = [
-    {      
-        routePath: '*',   // ----------- Page Not Fonund
-        Component: PageNotFound,
+        key:'2',
+        name:'About us',
+        path:'aboutus'
     },
-    {      
-        routePath: 'networkerror',  // ----------- Network Error
-        Component: NetWorkError,
-    },
-    {
-        routePath:'',   // ----------- Dashboard
-        Component:Profile,
-    }
 ]

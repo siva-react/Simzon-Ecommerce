@@ -1,15 +1,12 @@
 import React, { Fragment, useLayoutEffect } from "react"
 import GlobalStyle from "@theme/GlobalStyle"
-import { useLocation } from "react-router-dom"
-import Routers from "./router"
-import { useSelector } from "react-redux"
-import { selectCurrentToken } from "@modules/Auth/authSlice"
+import { Route, Routes, useLocation } from "react-router-dom"
+import { linkList } from "@router/config/routes"
+import WebLayout from "@layout/WebLayout/WebLayout"
 
 function App() {
 
   const location = useLocation()
-
-  const token = useSelector(selectCurrentToken);
 
   useLayoutEffect(() => {
     window.scrollTo(0, 0)
@@ -18,7 +15,19 @@ function App() {
   return (
     <Fragment>
       <GlobalStyle />
-        <Routers token={token}/>
+      <WebLayout>
+        <Routes>
+          {linkList.map(({ routePath, Component }) => {
+            return (
+              <Route
+                key={routePath}
+                path={routePath}
+                element={<Component />}
+              ></Route>
+            )
+          })}
+        </Routes>
+      </WebLayout>
     </Fragment>
   )
 }

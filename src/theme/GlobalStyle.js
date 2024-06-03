@@ -7,8 +7,26 @@ const GlobalStyle = createGlobalStyle`
         margin:0;
         padding: 0;
         box-sizing:border-box;
-        font-family: 'Nunito Sans', sans-serif; 
+        font-family: "Lato", sans-serif;
     } 
+
+    h4, h5, h6,
+    h1, h2, h3 {margin-top: 0;}
+    ul, ol {margin: 0;}
+    p {margin: 0;}
+    html, body{
+        font-family: 'Lato', sans-serif;
+        font-size: 100%;
+        background:#fff;
+    }
+
+    body a{
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+    }
    
   & .ant-menu-item-icon {
     font-size: 23px !important;
