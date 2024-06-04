@@ -4,6 +4,7 @@ import SHOPPINGBAG from './shopingBag.png'
 
 import FOOTERBG from './Footer/BottomBorder.jpeg'
 import FOOTERCONTAINERIMG from './Footer/FooterContainer.jpeg'
+import SWIPERBACKGROUND from '../images/carouselBackground.webp'
 
 export const AvImg = Avatar
 
@@ -12,5 +13,6 @@ export const images = {
     SHOPPINGBAG,
 
     FOOTERBG,
-    FOOTERCONTAINERIMG
+    FOOTERCONTAINERIMG,
+    SWIPERBACKGROUND
 } 

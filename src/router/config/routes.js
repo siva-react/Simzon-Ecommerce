@@ -2,6 +2,7 @@ import { NetWorkError } from "@router/components/NetWorkError"
 import PageNotFound from "@router/components/PageNotFound"
 import { Profile } from "@modules/Profile"
 import AboutUs from "@modules/AboutUs/AboutUs"
+import Home from "@modules/Home/Home"
 
 export const linkList = [
     {       
@@ -14,7 +15,7 @@ export const linkList = [
     },
     {
         routePath: '/',  // ----------- Signin Page
-        Component: Profile,
+        Component: Home,
     },
     {
         routePath: 'aboutus',  // ----------- Signin Page
