@@ -75,7 +75,7 @@ const GlobalStyle = createGlobalStyle`
     .ant-form-item {
         margin-bottom: 6px !important;
     }
-
+/* 
     &.ant-drawer-right>.ant-drawer-content-wrapper{
         top:50px;
         right:0;
@@ -94,7 +94,7 @@ const GlobalStyle = createGlobalStyle`
    &.ant-drawer .ant-drawer-body{
         padding:20px !important;
         overflow-y:scroll !important;
-    }
+    } */
 `
 
 export default GlobalStyle

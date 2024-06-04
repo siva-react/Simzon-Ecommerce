@@ -2,7 +2,8 @@ const ROOT = {
   header_height:'70px',
     // =====  PRIMARY COLORS  ===========
   
-    primary_color: '#df1f26',    
+    primary_color: '#df1f26',
+    primary_light:'#f8454596',    
     secondary_color: '#eeeeee',
 
     gray_light:'#f7f7f7',
