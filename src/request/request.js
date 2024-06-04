@@ -6,7 +6,8 @@ const baseURLs = {
     staging: 'https://dev.hibiller.com/',  // API server url (Staging)
   };
   
-  const environment = process.env.NODE_ENV
+  // const environment = process.env.NODE_ENV
+  const environment = 'production';
   
 export const baseRequest = axios.create({
     baseURL: baseURLs[environment],
