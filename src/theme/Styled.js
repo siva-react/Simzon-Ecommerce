@@ -26,3 +26,7 @@ export const ContainerFluid = styled.div`
     margin-right: auto;
     margin-left: auto;
 `
+
+export const Section= styled.section`
+  
+`

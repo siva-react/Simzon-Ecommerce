@@ -75,26 +75,6 @@ const GlobalStyle = createGlobalStyle`
     .ant-form-item {
         margin-bottom: 6px !important;
     }
-
-    &.ant-drawer-right>.ant-drawer-content-wrapper{
-        top:50px;
-        right:0;
-        bottom:50px;
-        transition:0.5s;
-
-        @media ${THEME.MOBILEL} {
-            right:50px;
-        }
-    }
-
-    &.ant-drawer .ant-drawer-panel-motion-right-leave-active{
-        transform:translateX(150%)
-    }
-
-   &.ant-drawer .ant-drawer-body{
-        padding:20px !important;
-        overflow-y:scroll !important;
-    }
 `
 
 export default GlobalStyle

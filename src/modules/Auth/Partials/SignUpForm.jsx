@@ -18,8 +18,6 @@ const SignUpForm = () => {
     return (
         <HeaderWrap>
             <Container>
-
-
                 <Form onFinish={onFinish}
                     labelCol={{
                         span: 24,

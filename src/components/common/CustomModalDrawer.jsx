@@ -11,19 +11,19 @@ const CustomModalDrawer = ({
     open,
     width,
     backIcon,
-    content
+    children
 }) => {
     return (
         <StyledModalDrawer
-            maskStyle={{ background: 'transparent' }}
+            // maskStyle={{ background: 'transparent' }}
             title={title}
             placement={placement || 'right'}
             onClose={onClose}
             open={open}
             width={width || 300}
-            closeIcon={backIcon ? <IoArrowBackSharp /> : <IoCloseSharp />}
+            closeIcon={backIcon ? <IoArrowBackSharp /> : <IoCloseSharp color='#fff' size={22}/>}
         >
-            {content}
+            {children}
         </StyledModalDrawer>
     )
 }
@@ -33,6 +33,9 @@ export default CustomModalDrawer
 
 
 const StyledModalDrawer = styled(AntdDrawer)`
+    &.ant-drawer-content{
+        background:${THEME.black};
+    }
     .ant-drawer-header{
         border-bottom:0;
     }
@@ -47,7 +50,6 @@ const StyledModalDrawer = styled(AntdDrawer)`
     & .ant-modal-body{
         margin-top:20px;
     }
-
 `;
 
 //  --------- > Usage

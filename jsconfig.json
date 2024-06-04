@@ -6,7 +6,7 @@
             "@components/*": ["src/components/*"],
             "@layout/*": ["src/layout/*"],
             "@modules/*": ["src/modules/*"],
-            // "@store/*": ["src/store/*"],
+            "@hooks/*": ["src/hooks/*"],
             "@request/*": ["src/request/*"],
             "@router/*": ["src/router/*"],
             "@theme/*": ["src/theme/*"],

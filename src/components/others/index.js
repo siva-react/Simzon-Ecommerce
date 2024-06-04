@@ -7,4 +7,5 @@ export { default as CustomRow } from '@components/others/CustomRow'
 export { default as Flex } from '@components/others/Flex'
 export { default as TableImgHolder } from '@components/others/TableImgHolder'
 export { default as CustomPagenation } from '@components/others/CustomPagenation'
+export { default as CustomSearch } from '@components/others/CustomSearch'
 
